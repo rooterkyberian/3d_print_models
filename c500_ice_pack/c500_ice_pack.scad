@@ -12,7 +12,7 @@ lung(height)
 }
 
 
-w = 2;
+w = 1.6;
 h = 16;
 
 lung(w);
@@ -24,7 +24,7 @@ linear_extrude(height = h-w)
         {
             lung_flat();
         }
-        offset(r = -w/2)
+        offset(r = -w)
         {
             lung_flat();
         }
