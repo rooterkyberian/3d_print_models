@@ -54,13 +54,20 @@ difference() {
     }
     
     rr=gatebar_width*sqrt(2)/2;
-    translate([(grab_w-ziptie_width)/2, 0, 0]) {
-        difference() {
-            cube([ziptie_width, grab_d, gatebar_width+2*thickness]);
-            translate([0,gatebar_width/2, gatebar_width/2+thickness]) {
-                rotate([0,90,0]) cylinder(h=ziptie_width, r=rr);
+    translate([(grab_w-ziptie_width)/2,gatebar_width/2, gatebar_width/2+thickness]) {
+        rotate([0,90,0]) {
+            difference() {
+                cylinder(h=ziptie_width, r=rr+ziptie_width);
+                cylinder(h=ziptie_width, r=rr);
             }
         }
-        translate([0,grab_d,-TINY]) cube([ziptie_width, ziptie_thickness, INF]);
+    }
+    intersection() {
+        translate([(grab_w-ziptie_width)/2,grab_d,-TINY]) cube([ziptie_width, ziptie_thickness, INF]);
+        translate([(grab_w-ziptie_width)/2,gatebar_width/2, gatebar_width/2+thickness]) {
+            rotate([0,90,0]) {
+                cylinder(h=ziptie_width, r=rr+ziptie_width);
+            }
+        }
     }
 }
