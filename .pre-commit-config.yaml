@@ -1,0 +1,28 @@
+# See http://pre-commit.com for more information
+
+fail_fast: false
+repos:
+  - repo: git://github.com/pre-commit/mirrors-isort
+    rev: v5.6.0
+    hooks:
+      - id: isort
+  - repo: git://github.com/python/black
+    rev: 20.8b1
+    hooks:
+      - id: black
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: debug-statements
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.8.4
+    hooks:
+      - id: flake8
+  - repo: https://github.com/prettier/pre-commit
+    rev: v2.1.2
+    hooks:
+      - id: prettier
