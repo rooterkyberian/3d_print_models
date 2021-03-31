@@ -4,7 +4,6 @@ spacing = 150;
 
 module space(n) { translate([ n * spacing, 0, 0 ]) children(); }
 
-// egg_scale=10/25;
 egg_h = 100;
 egg_d = 76;
 
@@ -55,7 +54,7 @@ module funnel() {
 
 module whole_mold() {
   difference() {
-    union() {
+    hull() {
       base();
       translate([ 0, 0, -mold_thickness ]) hull()
           egg(egg_h + 2 * mold_thickness, egg_d + 2 * mold_thickness);
