@@ -1,0 +1,7 @@
+RawStringFormats:
+   - Language: Cpp
+     Delimiters: ['scad']
+     BasedOnStyle: llvm
+     CanonicalDelimiter: 'scad'
+#Language: scad
+BasedOnStyle: llvm

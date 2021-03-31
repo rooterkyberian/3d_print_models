@@ -22,7 +22,14 @@ repos:
     rev: 3.8.4
     hooks:
       - id: flake8
-  - repo: https://github.com/prettier/pre-commit
-    rev: v2.1.2
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.2.1
     hooks:
       - id: prettier
+  - repo: https://github.com/mantidproject/pre-commit-hooks
+    rev: 05b2d4cfe17dcb36e29c249705364c19eeccced5
+    hooks:
+      - id: clang-format
+        name: OpenSCAD Format
+        description: This hook formats openscad files.
+        files: \.scad$
