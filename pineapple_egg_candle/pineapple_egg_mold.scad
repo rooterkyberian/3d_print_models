@@ -42,7 +42,7 @@ module funnel_ring(thickness = ring_thickness, tolerance = ring_tolerance) {
   }
 }
 
-module inner_funnel() { cylinder(h = funnel_h + 2, d = funnel_inner_d); }
+module inner_funnel() { cylinder(h = funnel_h * 4, d = funnel_inner_d); }
 
 module funnel() {
   difference() {
