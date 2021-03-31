@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 DIR=$1
 OPENSCAD=openscad-nightly
 
@@ -13,5 +15,5 @@ do
 	echo "$OPENSCAD -o \"${f%.scad}.png\" -o \"${f%.scad}.stl\" \"$f\"" >> $CMD_FILE;
 done
 
-cab $CMD_FILE
+cat $CMD_FILE
 cat $CMD_FILE | xargs --verbose -I CMD --max-procs=$NPROC bash -c CMD
