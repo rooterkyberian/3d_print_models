@@ -14,6 +14,7 @@ funnel_h = 30;
 funnel_inner_d = 8.6;
 funnel_thickness = 1.4;
 funnel_d = funnel_inner_d + 2 * funnel_thickness;
+funnel_ring_h = min(funnel_h, 10);
 
 ring_thickness = 2;
 ring_tolerance = 0.6;
@@ -34,7 +35,6 @@ module base_ring(thickness = ring_thickness, tolerance = ring_tolerance) {
 }
 
 module funnel_ring(thickness = ring_thickness, tolerance = ring_tolerance) {
-  funnel_ring_h = min(funnel_h, 10);
   difference() {
     cylinder(h = funnel_ring_h, d = funnel_d + 2 * thickness);
     translate([ 0, 0, -1 ])
@@ -54,10 +54,13 @@ module funnel() {
 
 module whole_mold() {
   difference() {
-    hull() {
-      base();
-      translate([ 0, 0, -mold_thickness ]) hull()
-          egg(egg_h + 2 * mold_thickness, egg_d + 2 * mold_thickness);
+    union() {
+      hull() {
+        base();
+        translate([ 0, 0, -mold_thickness ]) hull()
+            egg(egg_h + 2 * mold_thickness, egg_d + 2 * mold_thickness);
+        translate([ 0, 0, egg_h - funnel_ring_h ]) funnel();
+      }
       translate([ 0, 0, egg_h ]) funnel();
     }
     egg(egg_h, egg_d);
