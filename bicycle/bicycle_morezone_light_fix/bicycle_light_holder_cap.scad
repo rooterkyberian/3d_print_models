@@ -12,7 +12,7 @@ screw_hole_countersink_d = 4;
 
 friction_bump_r = 1;
 
-inf = 1000;
+inf = 30;
 little_more = 0.1;
 
 $fn = 64;
