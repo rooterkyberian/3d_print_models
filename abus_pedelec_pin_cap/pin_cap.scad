@@ -1,11 +1,11 @@
 // --- Dimensions ---
 h = 9;      // Height of the pin (above the cap)
-d = 6;        // Max diameter of the hooked pin
+d = 6.5;        // Max diameter of the hooked pin
 od = 26;      // Outer diameter of the base cap
 ch = 1.5;     // Cap thickness / height
 
 // --- Internal/Mechanism Parameters ---
-shaft_d = 3.5;   // Diameter of the inner solid shaft
+shaft_d = 4.5;   // Diameter of the inner solid shaft
 barb_count = 4;  // Number of hooks/barbs
 slit_w = 1.2;    // Width of the slit creating the "U" shape
 
