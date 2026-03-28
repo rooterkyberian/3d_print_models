@@ -1,0 +1,10 @@
+[project]
+name = "recipro-driller"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cadquery>=2.7.0",
+    "cq-editor>=0.6.2",
+]

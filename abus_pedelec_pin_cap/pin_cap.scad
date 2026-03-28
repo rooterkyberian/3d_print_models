@@ -5,7 +5,8 @@ od = 26;      // Outer diameter of the base cap
 ch = 1.5;     // Cap thickness / height
 
 // --- Internal/Mechanism Parameters ---
-shaft_d = 4.5;   // Diameter of the inner solid shaft
+shaft_d = 4;   // Diameter of the inner solid shaft
+neck_d = 3.5;    // Diameter of the neck (solid part between cap and barbs)
 barb_count = 4;  // Number of hooks/barbs
 slit_w = 1.2;    // Width of the slit creating the "U" shape
 
@@ -25,16 +26,17 @@ module pin_assembly() {
         translate([0, 0, ch]) {
             difference() {
                 union() {
-                    // Smooth neck
-                    cylinder(h=neck_h, d=shaft_d);
+                    // Smooth neck (narrower, non-compressible solid)
+                    cylinder(h=neck_h, d1=neck_d, d2=shaft_d);
 
                     // Barbed section
                     translate([0, 0, neck_h]) {
                         cylinder(h=barb_section_h, d=shaft_d);
                         barb_h = (barb_section_h - tip_h) / barb_count;
                         for(i = [0 : barb_count - 1]) {
+                            barb_outer_d = d - (d - shaft_d) * (barb_count - 1 - i) / barb_count;
                             translate([0, 0, i * barb_h])
-                                cylinder(h=barb_h, d1=d, d2=shaft_d);
+                                cylinder(h=barb_h, d1=barb_outer_d, d2=shaft_d);
                         }
                         // Tapered Tip
                         translate([0, 0, barb_section_h - tip_h])
@@ -42,9 +44,9 @@ module pin_assembly() {
                     }
                 }
 
-                // Slit through neck and barbs
-                translate([0, 0, h/2])
-                    cube([d+2, slit_w, h+2], center=true);
+                // Slit only through barbed section (neck is solid)
+                translate([0, 0, neck_h + barb_section_h/2])
+                    cube([d+2, slit_w, barb_section_h + 2], center=true);
             }
         }
     }
