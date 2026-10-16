@@ -5,3 +5,5 @@ RawStringFormats:
     CanonicalDelimiter: "scad"
 #Language: scad
 BasedOnStyle: llvm
+# C++20 parses OpenSCAD's `module foo() {` as a module declaration
+Standard: c++17

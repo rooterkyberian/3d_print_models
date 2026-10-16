@@ -1,0 +1,8 @@
+target-version = "py312"
+# scripts import their sibling modules, e.g. `from variants import ...`
+src = [".", "hangboard", "recipro_driller"]
+
+[lint]
+extend-select = ["I"]
+# dict(key=value) is used on purpose for keyword-style records
+ignore = ["C408"]
