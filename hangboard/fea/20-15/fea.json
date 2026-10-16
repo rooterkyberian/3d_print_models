@@ -1,0 +1,336 @@
+{
+  "model": {
+    "step": "20-15/hangboard_20-15.step",
+    "wall_end_deg": 90.0,
+    "kink_force_per_T": 0.0,
+    "step_sha1": "4037946083bee2d780d1c59df4e8539470253475",
+    "nodes": 473021,
+    "elements": 324777,
+    "force_N": 1000.0,
+    "strand_angle_deg": 20.0,
+    "strand_tension_N": 532.1,
+    "finger_width_mm": 80.0,
+    "rope_contact_half_angle_deg": 35.0,
+    "E_MPa": 3000.0,
+    "nu": 0.35,
+    "note": "S33 = tension across print layers (Z). Linear-elastic; layer bonding is not modelled. Homogeneous solid: 100% infill."
+  },
+  "cases": [
+    {
+      "edge_mm": 20,
+      "face_y_mm": -16.0,
+      "rope_balance_error": 0.0021,
+      "finger_pull_out_N": 80.8,
+      "push": "-Y",
+      "finger_pressure_MPa": 0.833,
+      "loaded_bar": {
+        "S33_max": {
+          "MPa": 4.5,
+          "at_mm": [
+            1.0,
+            -15.7,
+            8.0
+          ]
+        },
+        "S1_max": {
+          "MPa": 9.31,
+          "at_mm": [
+            4.8,
+            -14.6,
+            7.1
+          ]
+        }
+      },
+      "far_bends": {
+        "S1_max": {
+          "MPa": 6.21,
+          "at_mm": [
+            59.0,
+            -18.2,
+            10.7
+          ]
+        },
+        "S3_min": {
+          "MPa": -15.3,
+          "at_mm": [
+            52.9,
+            -26.7,
+            13.2
+          ]
+        },
+        "S33_max": {
+          "MPa": 4.56,
+          "at_mm": [
+            59.2,
+            -16.6,
+            10.8
+          ]
+        }
+      },
+      "exit_bends": {
+        "S1_max": {
+          "MPa": 6.54,
+          "at_mm": [
+            58.9,
+            18.3,
+            10.8
+          ]
+        },
+        "S3_min": {
+          "MPa": -12.01,
+          "at_mm": [
+            57.8,
+            19.6,
+            13.0
+          ]
+        },
+        "S33_max": {
+          "MPa": 5.03,
+          "at_mm": [
+            59.1,
+            17.4,
+            10.8
+          ]
+        }
+      },
+      "floor": {
+        "S1_max": {
+          "MPa": 3.94,
+          "at_mm": [
+            0.0,
+            -12.0,
+            6.0
+          ]
+        },
+        "S3_min": {
+          "MPa": -2.41,
+          "at_mm": [
+            3.2,
+            -11.8,
+            0.0
+          ]
+        },
+        "S33_max": {
+          "MPa": 0.21,
+          "at_mm": [
+            6.4,
+            -12.0,
+            4.7
+          ]
+        }
+      },
+      "whole_part": {
+        "S33_max": {
+          "MPa": 5.03,
+          "at_mm": [
+            59.1,
+            17.4,
+            10.8
+          ]
+        },
+        "S1_max": {
+          "MPa": 9.31,
+          "at_mm": [
+            4.8,
+            -14.6,
+            7.1
+          ]
+        },
+        "S3_min": {
+          "MPa": -15.3,
+          "at_mm": [
+            52.9,
+            -26.7,
+            13.2
+          ]
+        },
+        "von_mises_max": {
+          "MPa": 8.88,
+          "at_mm": [
+            43.5,
+            -30.2,
+            11.9
+          ]
+        },
+        "displacement_max_mm": 0.1406
+      }
+    },
+    {
+      "edge_mm": 15,
+      "face_y_mm": 16.0,
+      "rope_balance_error": 0.002,
+      "finger_pull_out_N": 19.5,
+      "push": "+Y",
+      "finger_pressure_MPa": 1.25,
+      "loaded_bar": {
+        "S33_max": {
+          "MPa": 3.88,
+          "at_mm": [
+            8.8,
+            15.7,
+            7.9
+          ]
+        },
+        "S1_max": {
+          "MPa": 8.36,
+          "at_mm": [
+            5.5,
+            14.6,
+            7.1
+          ]
+        }
+      },
+      "far_bends": {
+        "S1_max": {
+          "MPa": 6.9,
+          "at_mm": [
+            59.1,
+            17.4,
+            10.8
+          ]
+        },
+        "S3_min": {
+          "MPa": -14.88,
+          "at_mm": [
+            47.1,
+            29.6,
+            12.9
+          ]
+        },
+        "S33_max": {
+          "MPa": 5.6,
+          "at_mm": [
+            59.1,
+            17.4,
+            10.8
+          ]
+        }
+      },
+      "exit_bends": {
+        "S1_max": {
+          "MPa": 5.86,
+          "at_mm": [
+            59.1,
+            -16.8,
+            15.5
+          ]
+        },
+        "S3_min": {
+          "MPa": -12.15,
+          "at_mm": [
+            58.5,
+            -15.6,
+            13.2
+          ]
+        },
+        "S33_max": {
+          "MPa": 4.56,
+          "at_mm": [
+            59.1,
+            -16.8,
+            15.5
+          ]
+        }
+      },
+      "floor": {
+        "S1_max": {
+          "MPa": 3.55,
+          "at_mm": [
+            0.0,
+            11.7,
+            6.0
+          ]
+        },
+        "S3_min": {
+          "MPa": -2.24,
+          "at_mm": [
+            42.9,
+            11.9,
+            5.8
+          ]
+        },
+        "S33_max": {
+          "MPa": 0.18,
+          "at_mm": [
+            4.3,
+            12.0,
+            4.8
+          ]
+        }
+      },
+      "whole_part": {
+        "S33_max": {
+          "MPa": 5.6,
+          "at_mm": [
+            59.1,
+            17.4,
+            10.8
+          ]
+        },
+        "S1_max": {
+          "MPa": 8.36,
+          "at_mm": [
+            5.5,
+            14.6,
+            7.1
+          ]
+        },
+        "S3_min": {
+          "MPa": -14.88,
+          "at_mm": [
+            47.1,
+            29.6,
+            12.9
+          ]
+        },
+        "von_mises_max": {
+          "MPa": 10.24,
+          "at_mm": [
+            67.4,
+            -11.8,
+            13.4
+          ]
+        },
+        "displacement_max_mm": 0.1083
+      }
+    }
+  ],
+  "reactions_N": [
+    {
+      "edge_mm": 20,
+      "NSYM": [
+        717.14,
+        -1.87,
+        0.15
+      ],
+      "NZ": [
+        0.62,
+        -0.0,
+        -0.0
+      ],
+      "NY": [
+        0.02,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "edge_mm": 15,
+      "NSYM": [
+        717.08,
+        1.72,
+        0.03
+      ],
+      "NZ": [
+        0.46,
+        -0.0,
+        0.0
+      ],
+      "NY": [
+        0.02,
+        -0.0,
+        -0.0
+      ]
+    }
+  ]
+}

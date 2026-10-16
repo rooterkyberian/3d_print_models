@@ -1,2 +1,7 @@
+[settings]
+experimental = true # conda backend (CalculiX)
+
 [tools]
+python = "3.12"
 uv = "latest"
+"conda:calculix" = "2.23"

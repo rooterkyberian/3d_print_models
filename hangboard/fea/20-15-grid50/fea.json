@@ -1,0 +1,645 @@
+{
+  "model": {
+    "step": "20-15/hangboard_20-15.step",
+    "wall_end_deg": 90.0,
+    "kink_force_per_T": 0.0,
+    "step_sha1": "4037946083bee2d780d1c59df4e8539470253475",
+    "nodes": 471671,
+    "elements": 323752,
+    "force_N": 1000.0,
+    "strand_angle_deg": 20.0,
+    "strand_tension_N": 532.1,
+    "finger_width_mm": 80.0,
+    "rope_contact_half_angle_deg": 35.0,
+    "E_MPa": 3000.0,
+    "nu": 0.35,
+    "note": "S33 = tension across print layers (Z). Linear-elastic; layer bonding is not modelled. Perimeters and top/bottom solid are solid plastic, sparse infill a homogeneous solid of reduced stiffness; peaks outside \"infill\" are nodal values, in \"infill\" integration-point values of elements entirely in infill, with equivalent_MPa the stress in the infill's own plastic (gyroid: MPa*E/E_infill; grid: in its walls).",
+    "infill": {
+      "pattern": "grid",
+      "density_pct": 50.0,
+      "wall_angle_deg": 45.0,
+      "E_xyz_MPa": [
+        66.7,
+        66.7,
+        1546.9
+      ],
+      "walls_mm": 2.7,
+      "top_mm": 1.0,
+      "bottom_mm": 0.8,
+      "layer_mm": 0.2,
+      "volume_share": 0.633
+    }
+  },
+  "cases": [
+    {
+      "edge_mm": 20,
+      "face_y_mm": -16.0,
+      "rope_balance_error": 0.0021,
+      "finger_pull_out_N": 80.8,
+      "push": "-Y",
+      "finger_pressure_MPa": 0.833,
+      "loaded_bar": {
+        "S33_max": {
+          "MPa": 6.52,
+          "at_mm": [
+            6.2,
+            -15.6,
+            7.7
+          ]
+        },
+        "S1_max": {
+          "MPa": 18.45,
+          "at_mm": [
+            5.0,
+            -14.8,
+            7.2
+          ]
+        }
+      },
+      "far_bends": {
+        "S1_max": {
+          "MPa": 8.02,
+          "at_mm": [
+            59.7,
+            -18.2,
+            10.0
+          ]
+        },
+        "S3_min": {
+          "MPa": -21.68,
+          "at_mm": [
+            48.8,
+            -29.0,
+            13.3
+          ]
+        },
+        "S33_max": {
+          "MPa": 4.74,
+          "at_mm": [
+            59.2,
+            -16.6,
+            10.8
+          ]
+        }
+      },
+      "exit_bends": {
+        "S1_max": {
+          "MPa": 7.99,
+          "at_mm": [
+            59.1,
+            18.3,
+            10.5
+          ]
+        },
+        "S3_min": {
+          "MPa": -15.72,
+          "at_mm": [
+            67.4,
+            11.8,
+            13.4
+          ]
+        },
+        "S33_max": {
+          "MPa": 5.03,
+          "at_mm": [
+            67.3,
+            18.7,
+            12.2
+          ]
+        }
+      },
+      "floor": {
+        "S1_max": {
+          "MPa": 4.59,
+          "at_mm": [
+            6.5,
+            -10.0,
+            6.0
+          ]
+        },
+        "S3_min": {
+          "MPa": -4.75,
+          "at_mm": [
+            13.7,
+            4.5,
+            0.0
+          ]
+        },
+        "S33_max": {
+          "MPa": 0.34,
+          "at_mm": [
+            4.6,
+            3.0,
+            1.1
+          ]
+        }
+      },
+      "whole_part": {
+        "S33_max": {
+          "MPa": 6.52,
+          "at_mm": [
+            6.2,
+            -15.6,
+            7.7
+          ]
+        },
+        "S1_max": {
+          "MPa": 18.45,
+          "at_mm": [
+            5.0,
+            -14.8,
+            7.2
+          ]
+        },
+        "S3_min": {
+          "MPa": -21.68,
+          "at_mm": [
+            48.8,
+            -29.0,
+            13.3
+          ]
+        },
+        "von_mises_max": {
+          "MPa": 16.56,
+          "at_mm": [
+            0.3,
+            -14.8,
+            7.2
+          ]
+        },
+        "displacement_max_mm": 0.2395
+      },
+      "infill": {
+        "loaded_bar": {
+          "S33_max": {
+            "MPa": 0.864,
+            "equivalent_MPa": 3.96,
+            "at_mm": [
+              42.4,
+              -26.9,
+              13.5
+            ]
+          },
+          "S1_max": {
+            "MPa": 2.284,
+            "equivalent_MPa": 8.4,
+            "at_mm": [
+              20.6,
+              -15.8,
+              6.6
+            ]
+          },
+          "S3_min": {
+            "MPa": -2.826,
+            "equivalent_MPa": -10.59,
+            "at_mm": [
+              42.4,
+              -26.9,
+              13.5
+            ]
+          }
+        },
+        "far_bends": {
+          "S33_max": {
+            "MPa": 2.173,
+            "equivalent_MPa": 6.19,
+            "at_mm": [
+              53.4,
+              -21.6,
+              13.2
+            ]
+          },
+          "S1_max": {
+            "MPa": 2.104,
+            "equivalent_MPa": 6.22,
+            "at_mm": [
+              53.4,
+              -21.6,
+              13.2
+            ]
+          },
+          "S3_min": {
+            "MPa": -4.281,
+            "equivalent_MPa": -15.77,
+            "at_mm": [
+              47.9,
+              -25.4,
+              14.2
+            ]
+          }
+        },
+        "exit_bends": {
+          "S33_max": {
+            "MPa": 1.351,
+            "equivalent_MPa": 4.08,
+            "at_mm": [
+              55.2,
+              17.7,
+              13.6
+            ]
+          },
+          "S1_max": {
+            "MPa": 1.566,
+            "equivalent_MPa": 5.02,
+            "at_mm": [
+              55.2,
+              17.7,
+              13.6
+            ]
+          },
+          "S3_min": {
+            "MPa": -3.102,
+            "equivalent_MPa": -11.26,
+            "at_mm": [
+              54.7,
+              16.2,
+              14.4
+            ]
+          }
+        },
+        "floor": {
+          "S33_max": {
+            "MPa": 0.116,
+            "equivalent_MPa": 1.81,
+            "at_mm": [
+              31.0,
+              -12.0,
+              5.3
+            ]
+          },
+          "S1_max": {
+            "MPa": 1.505,
+            "equivalent_MPa": 5.74,
+            "at_mm": [
+              31.0,
+              -12.0,
+              5.3
+            ]
+          },
+          "S3_min": {
+            "MPa": -1.416,
+            "equivalent_MPa": -5.38,
+            "at_mm": [
+              41.6,
+              -11.2,
+              5.5
+            ]
+          }
+        },
+        "whole_part": {
+          "S33_max": {
+            "MPa": 2.173,
+            "equivalent_MPa": 6.19,
+            "at_mm": [
+              53.4,
+              -21.6,
+              13.2
+            ]
+          },
+          "S1_max": {
+            "MPa": 2.478,
+            "equivalent_MPa": 9.3,
+            "at_mm": [
+              47.4,
+              -19.9,
+              25.3
+            ]
+          },
+          "S3_min": {
+            "MPa": -4.281,
+            "equivalent_MPa": -15.77,
+            "at_mm": [
+              47.9,
+              -25.4,
+              14.2
+            ]
+          }
+        }
+      }
+    },
+    {
+      "edge_mm": 15,
+      "face_y_mm": 16.0,
+      "rope_balance_error": 0.002,
+      "finger_pull_out_N": 19.5,
+      "push": "+Y",
+      "finger_pressure_MPa": 1.25,
+      "loaded_bar": {
+        "S33_max": {
+          "MPa": 5.34,
+          "at_mm": [
+            9.7,
+            15.5,
+            7.7
+          ]
+        },
+        "S1_max": {
+          "MPa": 16.6,
+          "at_mm": [
+            0.3,
+            14.8,
+            7.2
+          ]
+        }
+      },
+      "far_bends": {
+        "S1_max": {
+          "MPa": 8.59,
+          "at_mm": [
+            59.7,
+            18.0,
+            10.0
+          ]
+        },
+        "S3_min": {
+          "MPa": -21.25,
+          "at_mm": [
+            47.4,
+            29.5,
+            13.1
+          ]
+        },
+        "S33_max": {
+          "MPa": 5.25,
+          "at_mm": [
+            59.1,
+            18.3,
+            10.5
+          ]
+        }
+      },
+      "exit_bends": {
+        "S1_max": {
+          "MPa": 6.36,
+          "at_mm": [
+            58.8,
+            -19.1,
+            10.7
+          ]
+        },
+        "S3_min": {
+          "MPa": -18.32,
+          "at_mm": [
+            67.4,
+            -11.8,
+            13.4
+          ]
+        },
+        "S33_max": {
+          "MPa": 4.56,
+          "at_mm": [
+            67.3,
+            -18.7,
+            12.2
+          ]
+        }
+      },
+      "floor": {
+        "S1_max": {
+          "MPa": 4.07,
+          "at_mm": [
+            3.7,
+            10.4,
+            6.0
+          ]
+        },
+        "S3_min": {
+          "MPa": -4.32,
+          "at_mm": [
+            5.4,
+            -10.8,
+            0.0
+          ]
+        },
+        "S33_max": {
+          "MPa": 0.31,
+          "at_mm": [
+            11.6,
+            -9.4,
+            0.6
+          ]
+        }
+      },
+      "whole_part": {
+        "S33_max": {
+          "MPa": 5.65,
+          "at_mm": [
+            48.8,
+            14.2,
+            15.4
+          ]
+        },
+        "S1_max": {
+          "MPa": 16.6,
+          "at_mm": [
+            0.3,
+            14.8,
+            7.2
+          ]
+        },
+        "S3_min": {
+          "MPa": -21.25,
+          "at_mm": [
+            47.4,
+            29.5,
+            13.1
+          ]
+        },
+        "von_mises_max": {
+          "MPa": 17.48,
+          "at_mm": [
+            67.4,
+            -11.8,
+            13.4
+          ]
+        },
+        "displacement_max_mm": 0.1833
+      },
+      "infill": {
+        "loaded_bar": {
+          "S33_max": {
+            "MPa": 1.022,
+            "equivalent_MPa": 4.57,
+            "at_mm": [
+              42.1,
+              26.9,
+              13.6
+            ]
+          },
+          "S1_max": {
+            "MPa": 2.538,
+            "equivalent_MPa": 9.13,
+            "at_mm": [
+              13.3,
+              15.7,
+              6.3
+            ]
+          },
+          "S3_min": {
+            "MPa": -3.091,
+            "equivalent_MPa": -11.65,
+            "at_mm": [
+              42.4,
+              26.5,
+              14.2
+            ]
+          }
+        },
+        "far_bends": {
+          "S33_max": {
+            "MPa": 2.324,
+            "equivalent_MPa": 6.2,
+            "at_mm": [
+              55.2,
+              17.7,
+              13.6
+            ]
+          },
+          "S1_max": {
+            "MPa": 2.34,
+            "equivalent_MPa": 6.22,
+            "at_mm": [
+              55.2,
+              17.7,
+              13.6
+            ]
+          },
+          "S3_min": {
+            "MPa": -4.645,
+            "equivalent_MPa": -16.98,
+            "at_mm": [
+              45.2,
+              26.3,
+              12.8
+            ]
+          }
+        },
+        "exit_bends": {
+          "S33_max": {
+            "MPa": 0.963,
+            "equivalent_MPa": 3.29,
+            "at_mm": [
+              55.1,
+              -17.0,
+              11.9
+            ]
+          },
+          "S1_max": {
+            "MPa": 1.274,
+            "equivalent_MPa": 4.98,
+            "at_mm": [
+              55.7,
+              -15.9,
+              14.8
+            ]
+          },
+          "S3_min": {
+            "MPa": -3.179,
+            "equivalent_MPa": -11.5,
+            "at_mm": [
+              54.8,
+              -15.3,
+              13.5
+            ]
+          }
+        },
+        "floor": {
+          "S33_max": {
+            "MPa": 0.123,
+            "equivalent_MPa": 1.73,
+            "at_mm": [
+              30.4,
+              11.9,
+              5.2
+            ]
+          },
+          "S1_max": {
+            "MPa": 1.562,
+            "equivalent_MPa": 5.93,
+            "at_mm": [
+              25.4,
+              12.0,
+              5.5
+            ]
+          },
+          "S3_min": {
+            "MPa": -1.684,
+            "equivalent_MPa": -6.42,
+            "at_mm": [
+              39.4,
+              11.7,
+              5.5
+            ]
+          }
+        },
+        "whole_part": {
+          "S33_max": {
+            "MPa": 2.324,
+            "equivalent_MPa": 6.2,
+            "at_mm": [
+              55.2,
+              17.7,
+              13.6
+            ]
+          },
+          "S1_max": {
+            "MPa": 2.538,
+            "equivalent_MPa": 9.13,
+            "at_mm": [
+              13.3,
+              15.7,
+              6.3
+            ]
+          },
+          "S3_min": {
+            "MPa": -4.645,
+            "equivalent_MPa": -16.98,
+            "at_mm": [
+              45.2,
+              26.3,
+              12.8
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "reactions_N": [
+    {
+      "edge_mm": 20,
+      "NSYM": [
+        717.14,
+        -1.87,
+        0.15
+      ],
+      "NZ": [
+        1.2,
+        0.0,
+        -0.0
+      ],
+      "NY": [
+        0.12,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "edge_mm": 15,
+      "NSYM": [
+        717.08,
+        1.72,
+        0.03
+      ],
+      "NZ": [
+        0.94,
+        0.0,
+        0.0
+      ],
+      "NY": [
+        0.1,
+        -0.0,
+        0.0
+      ]
+    }
+  ]
+}
