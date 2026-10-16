@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "name": "hangboard_24-22-20-18-16-14",
+  "dimensions_mm": [
+    138.8000002,
+    158.0000002,
+    31.0000001
+  ],
+  "volume_cm3": 329.8889110636892,
+  "depths": [
+    {
+      "y": -48.0,
+      "side": "lower",
+      "depth_mm": 24.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": -48.0,
+      "side": "upper",
+      "depth_mm": 22.000000000000007,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.4019237886466911
+    },
+    {
+      "y": 0.0,
+      "side": "lower",
+      "depth_mm": 20.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": 0.0,
+      "side": "upper",
+      "depth_mm": 18.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": 48.0,
+      "side": "lower",
+      "depth_mm": 16.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": 48.0,
+      "side": "upper",
+      "depth_mm": 14.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    }
+  ],
+  "collars": [
+    {
+      "side": -1,
+      "end": -1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.926068688320015
+    },
+    {
+      "side": -1,
+      "end": 1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.926068688320015
+    },
+    {
+      "side": 1,
+      "end": -1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.926068688320015
+    },
+    {
+      "side": 1,
+      "end": 1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.926068688320015
+    }
+  ],
+  "open_seats": [
+    {
+      "side": -1,
+      "y": -58.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": -1,
+      "y": -29.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": -1,
+      "y": 0.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": -1,
+      "y": 29.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": -1,
+      "y": 58.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": 1,
+      "y": -58.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": 1,
+      "y": -29.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": 1,
+      "y": 0.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": 1,
+      "y": 29.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    },
+    {
+      "side": 1,
+      "y": 58.0,
+      "seat_bottom_z_mm": 7.800000000000026
+    }
+  ],
+  "exits": [
+    {
+      "side": -1,
+      "end": -1,
+      "chamfer_x_at_5mm_mm": 60.0
+    },
+    {
+      "side": -1,
+      "end": 1,
+      "chamfer_x_at_5mm_mm": 60.0
+    },
+    {
+      "side": 1,
+      "end": -1,
+      "chamfer_x_at_5mm_mm": 60.0
+    },
+    {
+      "side": 1,
+      "end": 1,
+      "chamfer_x_at_5mm_mm": 60.0
+    }
+  ],
+  "track": [
+    {
+      "end": -1,
+      "x": -30,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": -1,
+      "x": 0,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": -1,
+      "x": 30,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": 1,
+      "x": -30,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": 1,
+      "x": 0,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": 1,
+      "x": 30,
+      "depth_mm": 0.999999999999952
+    }
+  ],
+  "front_profile_samples": 1344,
+  "labels": [
+    {
+      "y": -69.1,
+      "recessed_samples": 287
+    },
+    {
+      "y": -26.9,
+      "recessed_samples": 276
+    },
+    {
+      "y": -21.1,
+      "recessed_samples": 312
+    },
+    {
+      "y": 21.1,
+      "recessed_samples": 310
+    },
+    {
+      "y": 26.9,
+      "recessed_samples": 296
+    },
+    {
+      "y": 69.1,
+      "recessed_samples": 277
+    }
+  ],
+  "see_through_rays": 48,
+  "stl_triangles": 249276,
+  "open_edges": 0,
+  "nonmanifold_edges": 0,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "relative_mesh_volume_error": 1.053961565641352e-05,
+  "load_rating": "UNTESTED; geometry checks only"
+}

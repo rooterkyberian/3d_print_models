@@ -1,0 +1,96 @@
+{
+  "name": "hangboard_25-20-17-14",
+  "depths_mm": [
+    25.0,
+    20.0,
+    17.0,
+    14.0
+  ],
+  "dimensions_mm": [
+    138.8,
+    110.0,
+    32.0
+  ],
+  "pockets": [
+    [
+      -24.0,
+      25.0,
+      20.0
+    ],
+    [
+      24.0,
+      17.0,
+      14.0
+    ]
+  ],
+  "pocket_size_mm": [
+    100.0,
+    32.0
+  ],
+  "floor_z_mm": 7.0,
+  "pocket_root_radius_mm": 2.0,
+  "edge_radius_mm": 0.8,
+  "grip_edge_radius_mm": 3.0,
+  "grip_flat_mm": 1.0,
+  "label_offset_mm": 5.1,
+  "front_spans_mm": [
+    [
+      -55.0,
+      -35.0,
+      32.0,
+      32.0
+    ],
+    [
+      -35.0,
+      -13.0,
+      32.0,
+      27.0
+    ],
+    [
+      -13.0,
+      -4.0,
+      27.0,
+      27.0
+    ],
+    [
+      -4.0,
+      4.0,
+      27.0,
+      24.0
+    ],
+    [
+      4.0,
+      13.0,
+      24.0,
+      24.0
+    ],
+    [
+      13.0,
+      35.0,
+      24.0,
+      21.0
+    ],
+    [
+      35.0,
+      55.0,
+      21.0,
+      21.0
+    ]
+  ],
+  "corner_radius_mm": 2.5,
+  "cord_diameter_mm": 8.0,
+  "channel_radius_mm": 4.4,
+  "rope_x_mm": 63.0,
+  "rope_z_mm": 12.2,
+  "exit_radius_mm": 15.0,
+  "exit_trough_radius_mm": 4.2,
+  "exit_rim_radius_mm": 0.8,
+  "track_depth_mm": 1.0,
+  "exit_sweep_oversize_mm": 0.1,
+  "corner_chamfer_mm": 14.400000000000006,
+  "tube_outer_radius_mm": 6.800000000000001,
+  "exit_front_cover_min_mm": 2.0,
+  "collar_length_mm": 19.0,
+  "shelf_x_mm": 59.4,
+  "print_orientation": "flat rear Z=0 on bed; finger pockets face +Z"
+}

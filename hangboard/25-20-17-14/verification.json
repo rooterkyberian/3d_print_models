@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "name": "hangboard_25-20-17-14",
+  "dimensions_mm": [
+    138.8000002,
+    110.0000002,
+    32.0000001
+  ],
+  "volume_cm3": 234.59917502183023,
+  "depths": [
+    {
+      "y": -24.0,
+      "side": "lower",
+      "depth_mm": 25.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": -24.0,
+      "side": "upper",
+      "depth_mm": 20.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": 24.0,
+      "side": "lower",
+      "depth_mm": 17.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    },
+    {
+      "y": 24.0,
+      "side": "upper",
+      "depth_mm": 14.0,
+      "root_z_0.5mm_from_wall": 7.677124344467707,
+      "grip_drop_1.5mm_from_wall": 0.401923788646684
+    }
+  ],
+  "collars": [
+    {
+      "side": -1,
+      "end": -1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.92606868832012
+    },
+    {
+      "side": -1,
+      "end": 1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.92606868832012
+    },
+    {
+      "side": 1,
+      "end": -1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.92606868832012
+    },
+    {
+      "side": 1,
+      "end": 1,
+      "tube_outer_x_mm": 68.91817411631712,
+      "roof_z_mm": 18.92606868832012
+    }
+  ],
+  "open_seats": [
+    {
+      "side": -1,
+      "y": -34.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": -1,
+      "y": -17.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": -1,
+      "y": 0.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": -1,
+      "y": 17.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": -1,
+      "y": 34.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": 1,
+      "y": -34.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": 1,
+      "y": -17.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": 1,
+      "y": 0.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": 1,
+      "y": 17.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    },
+    {
+      "side": 1,
+      "y": 34.0,
+      "seat_bottom_z_mm": 7.799999999999869
+    }
+  ],
+  "exits": [
+    {
+      "side": -1,
+      "end": -1,
+      "chamfer_x_at_5mm_mm": 60.0
+    },
+    {
+      "side": -1,
+      "end": 1,
+      "chamfer_x_at_5mm_mm": 60.0
+    },
+    {
+      "side": 1,
+      "end": -1,
+      "chamfer_x_at_5mm_mm": 60.0
+    },
+    {
+      "side": 1,
+      "end": 1,
+      "chamfer_x_at_5mm_mm": 60.0
+    }
+  ],
+  "track": [
+    {
+      "end": -1,
+      "x": -30,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": -1,
+      "x": 0,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": -1,
+      "x": 30,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": 1,
+      "x": -30,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": 1,
+      "x": 0,
+      "depth_mm": 0.999999999999952
+    },
+    {
+      "end": 1,
+      "x": 30,
+      "depth_mm": 0.999999999999952
+    }
+  ],
+  "front_profile_samples": 920,
+  "labels": [
+    {
+      "y": -45.1,
+      "recessed_samples": 293
+    },
+    {
+      "y": -2.8999999999999986,
+      "recessed_samples": 312
+    },
+    {
+      "y": 2.8999999999999986,
+      "recessed_samples": 239
+    },
+    {
+      "y": 45.1,
+      "recessed_samples": 277
+    }
+  ],
+  "see_through_rays": 48,
+  "stl_triangles": 211986,
+  "open_edges": 0,
+  "nonmanifold_edges": 0,
+  "connected_components": 1,
+  "degenerate_triangles": 0,
+  "relative_mesh_volume_error": 1.8002993808082172e-05,
+  "load_rating": "UNTESTED; geometry checks only"
+}

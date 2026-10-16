@@ -1,0 +1,65 @@
+{
+  "name": "hangboard_20-15",
+  "depths_mm": [
+    20.0,
+    15.0
+  ],
+  "dimensions_mm": [
+    138.8,
+    62.0,
+    27.0
+  ],
+  "pockets": [
+    [
+      0.0,
+      20.0,
+      15.0
+    ]
+  ],
+  "pocket_size_mm": [
+    100.0,
+    32.0
+  ],
+  "floor_z_mm": 7.0,
+  "pocket_root_radius_mm": 2.0,
+  "edge_radius_mm": 0.8,
+  "grip_edge_radius_mm": 3.0,
+  "grip_flat_mm": 1.0,
+  "label_offset_mm": 5.1,
+  "front_spans_mm": [
+    [
+      -31.0,
+      -11.0,
+      27.0,
+      27.0
+    ],
+    [
+      -11.0,
+      11.0,
+      27.0,
+      22.0
+    ],
+    [
+      11.0,
+      31.0,
+      22.0,
+      22.0
+    ]
+  ],
+  "corner_radius_mm": 2.5,
+  "cord_diameter_mm": 8.0,
+  "channel_radius_mm": 4.4,
+  "rope_x_mm": 63.0,
+  "rope_z_mm": 13.2,
+  "exit_radius_mm": 15.0,
+  "exit_trough_radius_mm": 4.2,
+  "exit_rim_radius_mm": 0.8,
+  "track_depth_mm": 1.0,
+  "exit_sweep_oversize_mm": 0.1,
+  "corner_chamfer_mm": 14.400000000000006,
+  "tube_outer_radius_mm": 6.800000000000001,
+  "exit_front_cover_min_mm": 2.0,
+  "collar_length_mm": 19.0,
+  "shelf_x_mm": 59.4,
+  "print_orientation": "flat rear Z=0 on bed; finger pockets face +Z"
+}

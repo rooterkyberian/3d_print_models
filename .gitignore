@@ -105,6 +105,7 @@ venv.bak/
 
 # project specific
 *.stl
+*.step
 
 # IDE
 .idea
