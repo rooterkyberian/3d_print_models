@@ -10,16 +10,17 @@ The slider rides in a vertical pocket cut into the housing wall. A pin passes th
 
 ## Parts
 
-| Part | File | Description |
-|------|------|-------------|
-| Screw | `screw.stl` | Cylinder with sinusoidal helical groove and 6mm drill chuck shank |
-| Housing | `housing.stl` | Cylindrical body with bore, vertical pocket, pin slit, and stem slot |
-| Slider | `slider.stl` | Body in pocket, follower pin, stem, arm, and 50mm platform (4x M4 holes) |
-| Cap | `cap.stl` | Bottom cap with press-fit lip; retains the screw axially |
+| Part    | File          | Description                                                              |
+| ------- | ------------- | ------------------------------------------------------------------------ |
+| Screw   | `screw.stl`   | Cylinder with sinusoidal helical groove and 6mm drill chuck shank        |
+| Housing | `housing.stl` | Cylindrical body with bore, vertical pocket, pin slit, and stem slot     |
+| Slider  | `slider.stl`  | Body in pocket, follower pin, stem, arm, and 50mm platform (4x M4 holes) |
+| Cap     | `cap.stl`     | Bottom cap with press-fit lip; retains the screw axially                 |
 
 ## Parameters
 
 ### Screw
+
 - Outer diameter: 20mm
 - Length: 60mm
 - Shank: 6mm x 20mm (fits drill chuck)
@@ -28,6 +29,7 @@ The slider rides in a vertical pocket cut into the housing wall. A pin passes th
 - Reversals: 2 full back-and-forth cycles per revolution
 
 ### Housing
+
 - Outer diameter: 50mm, bore: 20.4mm (0.4mm clearance)
 - Length: 65mm
 - Inner wall: 2mm (bore side of pocket)
@@ -37,6 +39,7 @@ The slider rides in a vertical pocket cut into the housing wall. A pin passes th
 - Stem slot: 8.4mm wide through outer wall, open at top
 
 ### Slider
+
 - Body: 9.4mm radial x 11.6mm tangential x 25mm tall (rides in pocket)
 - Follower pin: 3.0mm diameter, 5mm long
 - Stem: 2.7mm radial x 8mm tangential (bridges to outer wall)
@@ -45,6 +48,7 @@ The slider rides in a vertical pocket cut into the housing wall. A pin passes th
 - 4x M4 clearance holes on 35mm bolt circle
 
 ### Cap
+
 - Diameter: 50mm, thickness: 5mm
 - Shank bore: 6.4mm (0.4mm clearance)
 - Press-fit lip: 3mm tall, 0.3mm interference (20.7mm in 20.4mm bore)

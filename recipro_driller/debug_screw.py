@@ -1,4 +1,5 @@
 import cadquery as cq
+
 import recipro_driller as rd
 
 # Re-create just the base body logic from recipro_driller.py for debugging
@@ -7,23 +8,15 @@ screw_length = rd.screw_length
 shank_d = rd.shank_d
 shank_length = rd.shank_length
 
-print(f"Building debug screw body...")
+print("Building debug screw body...")
 print(f"  Body: R={screw_r}, L={screw_length}")
 print(f"  Shank: D={shank_d}, L={shank_length} (Hex)")
 
 # 1. Main cylinder
-screw_body = (
-    cq.Workplane("XY")
-    .circle(screw_r)
-    .extrude(screw_length)
-)
+screw_body = cq.Workplane("XY").circle(screw_r).extrude(screw_length)
 
 # 2. Hexagonal Shank
-shank = (
-    cq.Workplane("XY")
-    .polygon(6, shank_d)
-    .extrude(-shank_length)
-)
+shank = cq.Workplane("XY").polygon(6, shank_d).extrude(-shank_length)
 
 # 3. Transition
 transition = (

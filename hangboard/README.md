@@ -20,11 +20,11 @@ python build.py --cord 6 20,15
 - Each build goes to a directory named after its depths, e.g. `20-15/`. Without arguments, `build.py` builds `24,22,20,18,16,14`.
 - `--cord` sets the rope diameter the channels are sized for; the default is 8 mm (see Rope). It is recorded in `parameters.json`, not in the directory name, so rebuilding a variant with another cord replaces it.
 
-| Depths | Pockets | Outline W x H x max. thickness (8 mm cord) | Rope axis |
-|--------|---------|--------------------------------|-----------|
-| `24,22,20,18,16,14` | 24/22, 20/18, 16/14 | 138.8 x 158 x 31 mm | Z=12.2 mm |
-| `25,20,17,14` | 25/20, 17/14 | 138.8 x 110 x 32 mm | Z=12.2 mm |
-| `20,15` | 20/15 | 138.8 x 62 x 27 mm | Z=13.2 mm |
+| Depths              | Pockets             | Outline W x H x max. thickness (8 mm cord) | Rope axis |
+| ------------------- | ------------------- | ------------------------------------------ | --------- |
+| `24,22,20,18,16,14` | 24/22, 20/18, 16/14 | 138.8 x 158 x 31 mm                        | Z=12.2 mm |
+| `25,20,17,14`       | 25/20, 17/14        | 138.8 x 110 x 32 mm                        | Z=12.2 mm |
+| `20,15`             | 20/15               | 138.8 x 62 x 27 mm                         | Z=13.2 mm |
 
 ## Grip layout
 
@@ -76,25 +76,25 @@ python build.py --cord 6 20,15
 
 ## Files
 
-| File | Description |
-|------|-------------|
-| `build.py` | CadQuery source: `python build.py [DEPTHS ...]`. |
-| `variants.py` | Depth lists, their output directories and the front profile, shared by the scripts. |
-| `clean_stl.py` | Cleans up numerically collapsed export triangles at a 0.00001 mm tolerance. |
-| `verify.py` | Geometry checks; writes `verification.json`. |
-| `render.py` | STL renderer; label recesses are darkened for legibility only. |
-| `section.py` | Section extracted from the STL and rope channel diagram. |
+| File           | Description                                                                         |
+| -------------- | ----------------------------------------------------------------------------------- |
+| `build.py`     | CadQuery source: `python build.py [DEPTHS ...]`.                                    |
+| `variants.py`  | Depth lists, their output directories and the front profile, shared by the scripts. |
+| `clean_stl.py` | Cleans up numerically collapsed export triangles at a 0.00001 mm tolerance.         |
+| `verify.py`    | Geometry checks; writes `verification.json`.                                        |
+| `render.py`    | STL renderer; label recesses are darkened for legibility only.                      |
+| `section.py`   | Section extracted from the STL and rope channel diagram.                            |
 
 `verify.py`, `render.py` and `section.py` take the same depth lists as `build.py`, and process every built variant when given none. Each variant directory holds:
 
-| File | Description |
-|------|-------------|
-| `hangboard_<depths>.stl` | Model for the slicer, without the rope model. Generated, not committed. |
-| `hangboard_<depths>.step` | CAD solid for editing. Generated, not committed. |
-| `rope-preview.stl` | ONLY an illustrative model of the cord; do not print it as part of the hangboard. Generated, not committed. |
-| `parameters.json` | Model parameters. |
-| `verification.json` | Result of `verify.py`. |
-| `preview.png` / `front.png` / `rope-exits.png` / `side.png` / `bottom.png` / `section-and-rope.png` | Previews. `bottom.png` looks along the rope channels; `side.png` shows the collar tubes and open seats. |
+| File                                                                                                | Description                                                                                                 |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `hangboard_<depths>.stl`                                                                            | Model for the slicer, without the rope model. Generated, not committed.                                     |
+| `hangboard_<depths>.step`                                                                           | CAD solid for editing. Generated, not committed.                                                            |
+| `rope-preview.stl`                                                                                  | ONLY an illustrative model of the cord; do not print it as part of the hangboard. Generated, not committed. |
+| `parameters.json`                                                                                   | Model parameters.                                                                                           |
+| `verification.json`                                                                                 | Result of `verify.py`.                                                                                      |
+| `preview.png` / `front.png` / `rope-exits.png` / `side.png` / `bottom.png` / `section-and-rope.png` | Previews. `bottom.png` looks along the rope channels; `side.png` shows the collar tubes and open seats.     |
 
 Dependencies: CadQuery (tested with 2.8), NumPy, Pillow; additionally SciPy for `verify.py` and Matplotlib for `section.py`.
 
